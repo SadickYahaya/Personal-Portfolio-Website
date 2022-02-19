@@ -1,6 +1,7 @@
-/* * {
-    border: 1px solid red;
-} */
+* {
+    /* border: 1px solid red; */
+    font-family: 'Gideon Roman', cursive;
+}
 
 /* HEADER */
 header{
@@ -81,6 +82,8 @@ main{
 
 .portfolio-image h1{
     align-self: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .portfolio-image figure img {
@@ -100,8 +103,11 @@ main{
 
 .about-me h2{
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .about-me p{
     text-align: justify;
+    line-height: 30px;
 }
