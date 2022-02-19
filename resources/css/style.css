@@ -59,3 +59,49 @@ header{
     background-color: #DFD4F5;
 }
 
+@media only screen and (max-width: 600px){
+    #contact{
+        display: none;
+    }
+}
+
+/* MAIN */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    flex-direction: column;
+}
+
+.portfolio-image{
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-image h1{
+    align-self: center;
+}
+
+.portfolio-image figure img {
+    border-radius: 50%;
+}
+
+.portfolio-image figcaption {
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.about-me {
+    width: 50%;
+    margin-top: 100px;
+}
+
+.about-me h2{
+    text-align: center;
+}
+
+.about-me p{
+    text-align: justify;
+}
