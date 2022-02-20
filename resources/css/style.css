@@ -1,22 +1,33 @@
 * {
-    /* border: 1px solid red; */
+    /* border: 0.5px solid red;  */
     font-family: 'Gideon Roman', cursive;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F7F1F8;
+    color: #285D3D;
 }
 
 /* HEADER */
 header{
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #000001;
     color: white;
     padding: 0.1em;
     margin: -8px;
+    flex-wrap: wrap;
+}
+
+header h2{
+    justify-self: flex-start;
+    align-self: center;
 }
 
 .portfolio-header {
-    /* background-color: red; */
-    display: table;
-    margin: 0 auto;
+    justify-self: flex-end;
 }
 
 .portfolio-header ul{
@@ -60,34 +71,72 @@ header{
     background-color: #DFD4F5;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
     #contact{
         display: none;
+    }
+
+    aside{
+        flex-direction: column;
     }
 }
 
 /* MAIN */
-main{
+aside{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 100px;
-    flex-direction: column;
 }
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+.fa:hover {
+    opacity: 0.7;
+    color: white;
+  }
+  
+.fa-facebook {
+    color: #3b5998;
+  }
+  
+.fa-twitter {
+    color: #1DA1F2;
+  }
+
+.fa-github {
+    color: #000001;
+  }
+
+.fa-linkedin {
+    color: #0e76a8;
+  }
 
 .portfolio-image{
     display: flex;
     justify-content: center;
+   
+    padding: 30px;
+    border: 1px solid #2B818E;
+    border-radius: 10px;
 }
 
 .portfolio-image h1{
     align-self: center;
     letter-spacing: 2px;
     text-transform: uppercase;
+    border-bottom: 4px solid currentcolor;
 }
 
 .portfolio-image figure img {
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 .portfolio-image figcaption {
@@ -96,18 +145,15 @@ main{
     text-align: center;
 }
 
-.about-me {
-    width: 50%;
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.about-me h2{
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
 
-.about-me p{
-    text-align: justify;
-    line-height: 30px;
-}
+
+
