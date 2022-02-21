@@ -87,7 +87,9 @@ header h2{
     }
 
     .projects{
-        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        left: 60px;
     }
 
     .skills ul {
