@@ -1,5 +1,5 @@
 * {
-    border: 0.1px solid transparent; 
+    /* border: 0.1px solid transparent;  */
     font-family: 'Gideon Roman', cursive;
     box-sizing: border-box;
 }
@@ -19,7 +19,6 @@ header{
     padding: 0.1em;
     margin: -8px;
     flex-wrap: wrap;
-    width: 100%;
 }
 
 header h2{
@@ -65,7 +64,7 @@ header h2{
     background-color: #1D5962;
     border-radius: 5px;
     padding: 8px;
-    transition: all .2s ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 
 #contact a {
@@ -75,7 +74,7 @@ header h2{
 #contact:hover {
     color: black;
     background-color: #66C3D1;
-    transform: scale(1);
+    transform: scale(-1);
 }
 
 @media only screen and (max-width: 600px) {
@@ -85,6 +84,19 @@ header h2{
 
     aside{
         flex-direction: column;
+    }
+
+    .projects{
+        flex-direction: column;
+    }
+
+    .skills ul {
+        position: relative;
+        left: -54px;
+    }
+
+    .skills li{
+        margin-right: 25px;
     }
 }
 
@@ -125,10 +137,6 @@ aside{
     justify-content: center;
     align-items: center;
     margin-top: 100px;
-}
-
-.social-buttons{
-    
 }
 
 .fa-brands {
@@ -208,12 +216,12 @@ main{
     justify-self: center;
     margin: 0 auto;
     text-align: center;
+    margin-top: 100px;
 }
 
 .skills ul{
     display: flex;
     justify-content: space-between;
-    justify-items: center;
 }
 
 .skills li {
@@ -227,16 +235,49 @@ main{
   
 .fa-css3 {
     color: #1DA1F2;
-    margin-right: 15px;
   }
 
 .fa-js {
-    color: yellow;
-    margin-right: 15px;
+    color: #FFE657;
   }
 
 .fa-react {
     color: #0e76a8;
-    margin-right: 15px;
   }
 
+.projects-title{
+    margin-top: 100px;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    flex-direction: column;
+  }
+
+figcaption{
+    text-align: center;
+    margin-top: 10px;
+}
+
+figure img{
+    border: 2px solid #2B818E;
+    border-radius: 10px;
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+}
+
+figure img:hover{
+    transform: scale(1);
+}
+
+footer{
+    background-color: #1D5962;
+}
+
+#copyright-info{
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
