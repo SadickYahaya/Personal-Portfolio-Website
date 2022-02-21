@@ -100,31 +100,35 @@ header h2{
     }
 }
 
-@media only screen and (max-width: 375px) {
-    #contact{
-        display: none;
-    }
-
-    aside{
-        flex-direction: column;
-    }
-
-    .projects{
-        flex-direction: column;
-    }
-
-    .skills ul {
-        position: relative;
-        left: -54px;
-    }
-
-    .skills li{
-        margin-right: 25px;
-    }
+@media only screen and (max-width: 400px) {
 
     .ml1{
         display: none;
     }
+
+    .skills ul {
+        position: relative;
+        left: -78px;
+    }
+
+    .portfolio-header ul{
+        display: none;
+    }
+
+    .fa-brands{
+        position: relative;
+        top: 40px;
+    }
+
+    header h2{
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
 }
 
 .ml1 {
@@ -280,7 +284,7 @@ main{
     display: flex;
     justify-content: space-between;
     justify-items: center;
-    flex-direction: column;
+    flex-direction: row;
   }
 
 figcaption{
