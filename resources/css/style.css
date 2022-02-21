@@ -100,6 +100,33 @@ header h2{
     }
 }
 
+@media only screen and (max-width: 375px) {
+    #contact{
+        display: none;
+    }
+
+    aside{
+        flex-direction: column;
+    }
+
+    .projects{
+        flex-direction: column;
+    }
+
+    .skills ul {
+        position: relative;
+        left: -54px;
+    }
+
+    .skills li{
+        margin-right: 25px;
+    }
+
+    .ml1{
+        display: none;
+    }
+}
+
 .ml1 {
     font-weight: 900;
     font-size: 1.5em;
