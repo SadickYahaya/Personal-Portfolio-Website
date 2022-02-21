@@ -1,5 +1,5 @@
 
-// let text = ["Yahaya", "Abubakar", "Sadick"];
+// let text = ["Sadick Yahaya", "Hello there", "Welcome"];
 // let counter = 0;
 // let elem = document.getElementById("text-logo");
 // let inst = setInterval(change, 1000);
@@ -9,11 +9,11 @@
 //   counter++;
 //   if (counter >= text.length) {
 //     counter = 0;
-//     clearInterval(inst); 
+//     // clearInterval(inst); 
 //   }
 // }
 
-var textWrapper = document.querySelector('.ml1 .letters');
+let textWrapper = document.querySelector('.ml1 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 anime.timeline({loop: true})
