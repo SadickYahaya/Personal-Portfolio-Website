@@ -100,6 +100,14 @@ header h2{
     .skills li{
         margin-right: 25px;
     }
+
+    .ml1{
+        display: none;
+    }
+
+    .portfolio-header ul{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 400px) {
