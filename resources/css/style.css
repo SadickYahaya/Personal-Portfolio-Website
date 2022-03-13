@@ -141,6 +141,10 @@ header h2{
         flex-direction: column;
     }
 
+    .about-me{
+        text-align: center;
+    }
+
 }
 
 .ml1 {
